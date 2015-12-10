@@ -1,0 +1,10 @@
+.default-animation-config {
+  -webkit-animation-duration:0.5s;
+  animation-duration:0.5s;
+  -webkit-animation-delay:0s;
+  animation-delay:0s;
+  -webkit-animation-iteration-count:1;
+  animation-iteration-count:1;
+  -webkit-animation-timing-function:ease;
+  animation-timing-function:ease;
+}

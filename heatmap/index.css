@@ -1,0 +1,128 @@
+/*
+ * 全体設定
+ */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  height: calc(100% - 64px);
+}
+
+/*
+ * 追加ボタン
+ */
+#add-btn {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  z-index: 100;
+}
+
+/*
+ * モーダル
+ */
+#modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#modal .modal-wrapper {
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  width: 100%;
+  height: 100%;
+}
+
+#modal .modal-wrapper .modal-content {
+  width: 500px;
+  padding: 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+#drop-zone {
+  border: 2px dashed #bbb;
+  border-radius: 5px;
+  padding: 100px 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #bbb;
+}
+
+#file-list {
+  text-align: left;
+}
+
+#file-list li {
+  margin: 20px 0;
+}
+
+#import-btn {
+  width: 180px;
+}
+
+/*
+ * プログレスバー
+ */
+#progress {
+  margin: 10px 0px;
+}
+
+/*
+ * ツールチップ
+ */
+#help-tooltip {
+  text-align: left;
+}
+
+#help-tooltip .csv-file {
+  margin-top: 5px;
+}
+
+#help-tooltip .csv-format {
+  margin-top: 5px;
+  padding: 5px;
+  border: 1px solid #bbb;
+}
+
+/*
+ * アニメーション
+ */
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-duration:0.3s;
+  animation-duration:0.3s;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
