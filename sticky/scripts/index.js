@@ -1,0 +1,1 @@
+$(function(){var t=$("#header"),o=$("#content"),c=$("#footer");$("#stickyDom").sticky(t,o,c)});
