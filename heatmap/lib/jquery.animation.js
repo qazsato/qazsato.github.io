@@ -1,6 +1,6 @@
 /**
  * jquery.animation.js
- * @author qaz-s
+ * @author qazsato
  */
 (function($){
   /**
