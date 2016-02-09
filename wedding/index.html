@@ -1,1 +1,143 @@
-<!DOCTYPE html><html lang=ja><head><meta charset=UTF-8><title>Happy Wedding</title><meta name=viewport content="width=device-width, initial-scale=1, user-scalable=no"><link rel=stylesheet href=styles/material.pink-orange.min.css><link rel=stylesheet href="https://fonts.googleapis.com/icon?family=Material+Icons"><link rel=stylesheet href=styles/index.css></head><body><div class="mdl-layout mdl-js-layout mdl-layout--fixed-header"><header class=mdl-layout__header><div class=mdl-layout__header-row><span class="mdl-layout-title font-wedding">Micky & Minny's Wedding</span></div><div class="mdl-layout__tab-bar mdl-js-ripple-effect"><a href=#invitation-tab class="mdl-layout__tab is-active">Invitation</a> <a href=#access-tab class=mdl-layout__tab>Access</a> <a href=#profile-tab class=mdl-layout__tab>Profile</a></div></header><main class=mdl-layout__content><section class="mdl-layout__tab-panel is-active" id=invitation-tab><div class=page-content><div class=image-container><img src=images/frametop.png width=100%> <img class=kadomaru src=images/mickyandminny.jpeg width=80%> <img src=images/framebottom.png width=100%></div><div class=text-container><h4>title</h4><p>メッセージメッセージメッセージメッセージメッセージメッセージ</p><p>メッセージメッセージメッセージメッセージメッセージメッセージ</p><p>メッセージメッセージメッセージメッセージメッセージメッセージ</p></div></div></section><section class=mdl-layout__tab-panel id=access-tab><div class=page-content><div class="place-card-image mdl-card mdl-shadow--2dp"><div class="mdl-card__title mdl-card--expand"></div><div class=mdl-card__actions><span class=place-card-image__name>お店の名前</span></div></div><table class="mdl-data-table mdl-js-data-table"><tbody><tr><th>開始時間</th><td class=mdl-data-table__cell--non-numeric>18:00-20:00</td></tr><tr><th>電話番号</th><td class=mdl-data-table__cell--non-numeric>09012345678</td></tr><tr><th>交通手段</th><td class=mdl-data-table__cell--non-numeric>テキストテキストテキスト</td></tr><tr><th>アクセス</th><td class=mdl-data-table__cell--non-numeric>テキストテキストテキスト</td></tr><tr><th>地図</th><td class=mdl-data-table__cell--non-numeric><div>NAVITIMEをお持ちの方</div><button id=navitime-button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">地図を見る</button><div>Googleマップをお持ちの方</div><button id=google-button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">地図を見る</button></td></tr></tbody></table></div></section><section class=mdl-layout__tab-panel id=profile-tab><div class=page-content><table class="mdl-data-table mdl-js-data-table"><thead><tr><th class=col-1><img src=images/micky.png class=image-circle></th><th class=col-2></th><th class=col-3><img src=images/minny.png class=image-circle></th></tr></thead><tr><td class=col-1>テキスト</td><td class=col-2>name</td><td class=col-3>テキスト</td></tr><tr><td class=col-1>11/11</td><td class=col-2>birthday</td><td class=col-3>99/99</td></tr><tr><td class=col-1>テキスト</td><td class=col-2>home</td><td class=col-3>テキスト</td></tr><tr><td class=col-1>テキスト</td><td class=col-2>hobby</td><td class=col-3>テキスト</td></tr><tr><td class=col-1>...</td><td class=col-2>...</td><td class=col-3>...</td></tr><tr><td class=col-1>...</td><td class=col-2>...</td><td class=col-3>...</td></tr><tr><td class=col-1>...</td><td class=col-2>...</td><td class=col-3>...</td></tr><tr><td class=col-1>テキストテキストテキスト</td><td class=col-2>comment</td><td class=col-3>テキストテキストテキスト</td></tr><tbody></tbody></table></div></section></main></div><script src=https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js></script></body></html>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Wedding</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="styles/material.pink-orange.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+  <!-- Uses a header that scrolls with the text, rather than staying
+    locked at the top -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title font-wedding">Micky & Minny's Wedding</span>
+      </div>
+      <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+        <a href="#invitation-tab" class="mdl-layout__tab is-active">Invitation</a>
+        <a href="#access-tab" class="mdl-layout__tab">Access</a>
+        <a href="#profile-tab" class="mdl-layout__tab">Profile</a>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <section class="mdl-layout__tab-panel is-active" id="invitation-tab">
+        <div class="page-content">
+          <div class="image-container">
+            <img src="images/frametop.png" width="100%">
+            <img class="kadomaru" src="images/mickyandminny.jpeg" width="80%">
+            <img src="images/framebottom.png" width="100%">
+          </div>
+          <div class="text-container">
+            <h4>title</h4>
+            <p>メッセージメッセージメッセージメッセージメッセージメッセージ</p>
+            <p>メッセージメッセージメッセージメッセージメッセージメッセージ</p>
+            <p>メッセージメッセージメッセージメッセージメッセージメッセージ</p>
+          </div>
+        </div>
+      </section>
+      <section class="mdl-layout__tab-panel" id="access-tab">
+        <div class="page-content">
+          <div class="place-card-image mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title mdl-card--expand"></div>
+            <div class="mdl-card__actions">
+              <span class="place-card-image__name">お店の名前</span>
+            </div>
+          </div>
+          <table class="mdl-data-table mdl-js-data-table">
+            <tbody>
+              <tr>
+                <th>開始時間</th>
+                <td class="mdl-data-table__cell--non-numeric">18:00-20:00</td>
+              </tr>
+              <tr>
+                <th>電話番号</th>
+                <td class="mdl-data-table__cell--non-numeric">09012345678</td>
+              </tr>
+              <tr>
+                <th>交通手段</th>
+                <td class="mdl-data-table__cell--non-numeric">テキストテキストテキスト</td>
+              </tr>
+              <tr>
+                <th>アクセス</th>
+                <td class="mdl-data-table__cell--non-numeric">テキストテキストテキスト</td>
+              </tr>
+              <tr>
+                <th>地図</th>
+                <td class="mdl-data-table__cell--non-numeric">
+                  <div>NAVITIMEをお持ちの方</div>
+                  <button id="navitime-button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">地図を見る</button>
+                  <div>Googleマップをお持ちの方</div>
+                  <button id="google-button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">地図を見る</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="mdl-layout__tab-panel" id="profile-tab">
+        <div class="page-content">
+          <table class="mdl-data-table mdl-js-data-table">
+            <thead>
+              <tr>
+                <th class="col-1">
+                  <img src="images/micky.png" alt="" class="image-circle">
+                </th>
+                <th class="col-2"></th>
+                <th class="col-3">
+                  <img src="images/minny.png" alt="" class="image-circle">
+                </th>
+              </tr>
+            </thead>
+              <tr>
+                <td class="col-1">テキスト</td>
+                <td class="col-2">name</td>
+                <td class="col-3">テキスト</td>
+              </tr>
+              <tr>
+                <td class="col-1">11/11</td>
+                <td class="col-2">birthday</td>
+                <td class="col-3">99/99</td>
+              </tr>
+              <tr>
+                <td class="col-1">テキスト</td>
+                <td class="col-2">home</td>
+                <td class="col-3">テキスト</td>
+              </tr>
+              <tr>
+                <td class="col-1">テキスト</td>
+                <td class="col-2">hobby</td>
+                <td class="col-3">テキスト</td>
+              </tr>
+              <tr>
+                <td class="col-1">...</td>
+                <td class="col-2">...</td>
+                <td class="col-3">...</td>
+              </tr>
+              <tr>
+                <td class="col-1">...</td>
+                <td class="col-2">...</td>
+                <td class="col-3">...</td>
+              </tr>
+              <tr>
+                <td class="col-1">...</td>
+                <td class="col-2">...</td>
+                <td class="col-3">...</td>
+              </tr>
+              <tr>
+                <td class="col-1">テキストテキストテキスト</td>
+                <td class="col-2">comment</td>
+                <td class="col-3">テキストテキストテキスト</td>
+              </tr>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+</body>
+</html>
