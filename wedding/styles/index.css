@@ -60,6 +60,9 @@
 }
 
 #access-tab .mdl-data-table th {
+  width: 70px;
+  text-align: center;
+  padding: 0 0 0 10px;
   vertical-align: middle;
 }
 
@@ -67,10 +70,16 @@
   white-space: normal;
   padding-top: 14px;
   padding-bottom: 10px;
+  padding-right: 5px;
 }
 
 #access-tab .mdl-data-table td .button-container {
   padding-top: 10px;
+}
+
+#map {
+  width: 100%;
+  height: 250px;
 }
 
 #access-tab #navitime-button {
@@ -102,6 +111,7 @@
   text-align: center;
   padding-top: 14px;
   padding-bottom: 10px;
+  vertical-align: middle;
 }
 
 #profile-tab .mdl-data-table .image-circle {

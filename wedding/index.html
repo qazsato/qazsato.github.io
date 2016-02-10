@@ -16,7 +16,7 @@
       </div>
       <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
         <a href="#invitation-tab" class="mdl-layout__tab is-active">Invitation</a>
-        <a href="#access-tab" class="mdl-layout__tab">Access</a>
+        <a id="access-tab" href="#access-tab" class="mdl-layout__tab">Access</a>
         <a href="#profile-tab" class="mdl-layout__tab">Profile</a>
       </div>
     </header>
@@ -76,10 +76,7 @@
               <tr>
                 <th>地図</th>
                 <td class="mdl-data-table__cell--non-numeric">
-                  <div>NAVITIMEをお持ちの方</div>
-                  <button id="navitime-button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">地図を見る</button>
-                  <div>Googleマップをお持ちの方</div>
-                  <button id="google-button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">地図を見る</button>
+                  <div id="map"></div>
                 </td>
               </tr>
             </tbody>
@@ -149,5 +146,8 @@
     </main>
   </div>
   <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=visualization"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="scripts/index.js"></script>
 </body>
 </html>
