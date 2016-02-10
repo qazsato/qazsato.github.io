@@ -93,6 +93,10 @@
   vertical-align: middle;
 }
 
+#profile-tab .mdl-data-table .col-2 {
+  width: 200px;
+}
+
 #profile-tab .mdl-data-table td {
   white-space: normal;
   text-align: center;
