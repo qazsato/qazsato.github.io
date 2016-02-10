@@ -41,6 +41,7 @@
 #access-tab .place-card-image.mdl-card {
   width: 100%;
   background: url("../images/place.jpg") center/cover;
+  background-size: cover;
 }
 
 #access-tab .place-card-image.mdl-card > .mdl-card__actions {
