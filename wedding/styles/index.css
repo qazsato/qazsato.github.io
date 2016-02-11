@@ -42,6 +42,12 @@
   padding-right: 10%;
 }
 
+#form-content {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
 #access-tab .place-card-image.mdl-card {
   width: 100%;
   background-image: url("../images/place.jpg");
