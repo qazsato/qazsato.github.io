@@ -1,10 +1,4 @@
 $(function () {
-
-  if (isAndroidBrowser()) {
-    var link = '<a href="https://docs.google.com/forms/d/18WoU2fbQyEF2NwAtnw6GxCDHhm-RYbKVYV9YYkNxkm8/viewform?usp=send_form" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">出欠のご回答はこちら</a>';
-    $("#form-content").html(link);
-  }
-
   var map;
   $("#accessTab").on("click", function () {
     if (map) {
@@ -24,8 +18,12 @@ $(function () {
       title: 'BAGUS PLACE 銀座'
     });
   });
-});
 
+  if (isAndroidBrowser()) {
+    var link = '<a href="https://docs.google.com/forms/d/18WoU2fbQyEF2NwAtnw6GxCDHhm-RYbKVYV9YYkNxkm8/viewform?usp=send_form" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">出欠のご回答はこちら</a>';
+    $("#form-content").html(link);
+  }
+});
 
 var isAndroidBrowser = function () {
   var ua = window.navigator.userAgent
