@@ -11,7 +11,7 @@ $(function () {
       return;
     }
     var bagusLatLng = new google.maps.LatLng(35.673988, 139.766385);
-    map = new google.maps.Map($("#map").get(0), {
+    map = new google.maps.Map($("#google-map").get(0), {
       zoom: 17,
       center: bagusLatLng,
       mapTypeId: google.maps.MapTypeId.ROADMAP,
