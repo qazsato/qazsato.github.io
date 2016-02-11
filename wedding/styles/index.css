@@ -122,6 +122,7 @@
 
 #profile-tab .mdl-data-table .col-2 {
   width: 200px;
+  padding: 0;
 }
 
 #profile-tab .mdl-data-table td {
