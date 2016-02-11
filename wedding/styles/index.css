@@ -89,6 +89,10 @@
   padding-top: 10px;
 }
 
+#map-content {
+  position: relative;
+}
+
 #map {
   width: 100%;
   height: 250px;
