@@ -16,11 +16,13 @@
 }
 
 .mdl-layout__header-row .mdl-layout-title {
-  font-size: 32px;
+  font-size: 31px;
+  letter-spacing: 0px;
 }
 
 .mdl-layout__tab-bar {
   height: auto;
+  padding-left: 30px;
 }
 
 #invitation-tab .image-container {
