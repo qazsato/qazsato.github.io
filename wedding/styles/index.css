@@ -46,8 +46,11 @@
 
 #form-content {
   padding-top: 20px;
-  padding-bottom: 50px;
   text-align: center;
+}
+
+#form-content > .mdl-button {
+  margin-bottom: 50px;
 }
 
 #access-tab .place-card-image.mdl-card {
