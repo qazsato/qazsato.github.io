@@ -1,6 +1,6 @@
 $(function () {
   var map;
-  $("#access-tab").on("click", function () {
+  $("#accessTab").on("click", function () {
     if (map) {
       return;
     }
