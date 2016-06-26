@@ -9,51 +9,53 @@
     <link rel="stylesheet" href="index.css"/>
   </head>
   <body>
-    <header class="mdl-layout__header">
-      <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Heatmap</span>
-        <div class="mdl-layout-spacer"></div>
-        <button id="map-menu-btn" class="mdl-button mdl-js-button mdl-button--icon">
-          <i class="material-icons">more_vert</i>
-        </button>
-        <ul id="map-menu-list" class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="map-menu-btn">
-          <li disabled class="mdl-menu__item" data-type="heatmaps">Heatmaps</li>
-          <li class="mdl-menu__item" data-type="markers">Markers</li>
-        </ul>
-      </div>
-    </header>
-    <button id="add-btn" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
-      <i class="material-icons">add</i>
-    </button>
-    <div id="map"></div>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header mdl-layout--fixed-header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Heatmap</span>
+          <div class="mdl-layout-spacer"></div>
+          <button id="map-menu-btn" class="mdl-button mdl-js-button mdl-button--icon">
+            <i class="material-icons">more_vert</i>
+          </button>
+          <ul id="map-menu-list" class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="map-menu-btn">
+            <li disabled class="mdl-menu__item" data-type="heatmaps">Heatmaps</li>
+            <li class="mdl-menu__item" data-type="markers">Markers</li>
+          </ul>
+        </div>
+      </header>
+      <button id="add-btn" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+        <i class="material-icons">add</i>
+      </button>
+      <div id="map"></div>
 
-    <section id="modal">
-      <div class="modal-wrapper">
-        <div class="modal-content">
-          <div id="drop-zone">
-            <span>Drop CSV file here<span>
-            <button id="help" class="mdl-button mdl-js-button mdl-button--icon">
-              <i class="material-icons">help_outline</i>
-            </button>
-            <div id="help-tooltip" class="mdl-tooltip" for="help">
-              <strong>CSV Format</strong>
-              <div class="csv-file">test.csv</div>
-              <div class="csv-format">
-                <div>lat,lng</div>
-                <div>37.09636,139.81002</div>
-                <div>37.08346,139.82983</div>
-                <div>...</div>
+      <section id="modal">
+        <div class="modal-wrapper">
+          <div class="modal-content">
+            <div id="drop-zone">
+              <span>Drop CSV file here<span>
+              <button id="help" class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">help_outline</i>
+              </button>
+              <div id="help-tooltip" class="mdl-tooltip" for="help">
+                <strong>CSV Format</strong>
+                <div class="csv-file">test.csv</div>
+                <div class="csv-format">
+                  <div>lat,lng</div>
+                  <div>37.09636,139.81002</div>
+                  <div>37.08346,139.82983</div>
+                  <div>...</div>
+                </div>
               </div>
             </div>
-          </div>
-          <div id="progress" class="mdl-progress mdl-js-progress"></div>
-          <output id="file-list"></output>
-          <div>
-            <button id="import-btn" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">Import</button>
+            <div id="progress" class="mdl-progress mdl-js-progress"></div>
+            <output id="file-list"></output>
+            <div>
+              <button id="import-btn" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">Import</button>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=visualization"></script>
     <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
