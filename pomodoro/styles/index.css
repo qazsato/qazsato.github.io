@@ -1,0 +1,80 @@
+@font-face {
+	font-family: 'ikamodoki';
+	src: url(../fonts/ikamodoki.ttf);
+}
+
+@font-face {
+	font-family: 'Paintball';
+	src: url(../fonts/Paintball.otf);
+}
+
+* {
+	font-family: 'ikamodoki', 'Paintball' !important;
+	font-weight: bold !important;
+}
+
+body {
+  background-color: #fdf6e3;
+}
+
+.material-icons {
+	font-family: 'Material Icons' !important;
+}
+
+.mdl-layout-title {
+  position: relative;
+  top: -7px;
+  margin-left: 10px;
+  font-size: 25px;
+}
+
+.tomato-content {
+  margin-top: 80px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.timer-content {
+  text-align: center;
+  font-size: 200px;
+  line-height: 200px;
+  color: #2C3E50;
+  letter-spacing: 20px;
+}
+
+.timer-content > span {
+  display: inline-block;
+}
+
+.timer-content > .min {
+  width: 270px;
+  position: relative;
+  left: 80px;
+  text-align: right;
+}
+
+.timer-content > .colon {
+  position: relative;
+  top: -20px;
+}
+
+.timer-content > .sec {
+  width: 270px;
+  position: relative;
+  right: 80px;
+  text-align: left;
+}
+
+.button-content {
+  margin-top: 100px;
+  width: 100%;
+  text-align: center;
+}
+
+.button-content .mdl-button {
+  height: 50px;
+  min-width: 128px;
+  margin: 0 6px;
+  padding-bottom: 10px;
+  font-size: 22px;
+}
